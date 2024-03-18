@@ -1,3 +1,4 @@
+import 'package:discussion/utils/appConstant.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -21,10 +22,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 100,
               ),
               Lottie.asset('assets/images/splash.json'),
-              const Text(
-                'STUDENT DISCUSSTION APP',
+              Text(
+                AppConstant.appName,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.blueGrey),
+                style: const TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.blueGrey),
               ),
               const Spacer(),
               const Row(
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     'Developed By: ',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Text('Gyanendra Singh')
+                  Text(AppConstant.createdBy)
                 ],
               ),
               const SizedBox(
